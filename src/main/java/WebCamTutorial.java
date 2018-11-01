@@ -32,10 +32,9 @@ public class WebCamTutorial {
         });
 
 
-
         webcam.setViewSize(WebcamResolution.VGA.getSize());
         webcam.open();
-        ImageIO.write(webcam.getImage(),"PNG", new File("/home/coder/Desktop/image.png"));
+        ImageIO.write(webcam.getImage(), "PNG", new File("/home/coder/Desktop/image.png"));
         webcam.close();
     }
 }
